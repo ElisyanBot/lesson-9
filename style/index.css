@@ -80,6 +80,7 @@ body{
             font-size: 5.6rem;
             font-weight: 500;
             color: #e2b618;
+            animation: uppAndDown 3s ease-in infinite;
         }
 
             .sectionOne-subHeading{
@@ -259,8 +260,8 @@ body{
                         #sectionThree-card_reserveTableForm  select{
                             background-color: #ECE9DF;
                             padding: 1.2rem;
-                            margin: 1rem;
-                            width: 10rem;
+                            margin:0rem;
+                            width: 11rem;
                             border: none;
                         }
                             
@@ -299,6 +300,12 @@ body{
         box-shadow: 0px -15px 15px -4px rgba(34, 29, 19, 0.301);
     }
 
+/*animations*/
+@keyframes uppAndDown{
+    0%{transform:translatex(-3rem);}
+    50%{transform:translatex(3rem)}
+    100%{transform:translatex(-3rem);}
+}
 
 
 /*half window responsivness*/

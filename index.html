@@ -59,10 +59,10 @@
                       <!--from card-->
                       <form id="sectionThree-card_reserveTableForm" action="">
                         <label for="ReserveName"></label>
-                        <input type="text" name="reserveName" placeholder="Type your Full Name" id="ReserveName">
+                        <input type="text" name="reserveName" placeholder="Type your Full Name" id="ReserveName" required>
 
                         <label for="ReserveEmail"></label>
-                        <input type="email" name="reserveEmail" placeholder="Type your Email" id="ReserveEmail">
+                        <input type="email" name="reserveEmail" placeholder="Type your Email" id="ReserveEmail" required>
 
                         <!--Note:didn't need to style this div in css, 
                             did what i wanted to do fromstart-->
@@ -72,15 +72,19 @@
 
                             <label for="GroupSize"></label>
                             <select name="groupSize" id="GroupSize">
+                                <option value="none" selected>group size</option>
+                                <option value="alone">Alone</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
                             </select>
                         </div>
 
                         <label for="MobileNumber"></label>
-                        <input type="text" id="MobileNumber" placeholder="+46">
+                        <input type="text" id="MobileNumber" placeholder="+46" required>
 
-                        <label for="CustumerMessage"></label>
-                        <textarea name="custumerMessage-other" id="CustumerMessage" cols="30" rows="15">
-                        </textarea>
+                        <label for="CustumerMessage">Other:</label>
+                        <textarea name="custumerMessage-other" id="CustumerMessage"  cols="30" rows="15"></textarea>
 
                         <div class="formRow">
                             <input type="checkbox" value="agrees" id="AgreeToGDPR">
