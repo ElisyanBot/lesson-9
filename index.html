@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts-->
+        <!--solway-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--stylesheet-->
+        <link rel="stylesheet" href="style/index.css">
+
+    <title>lektion 9</title>
+</head>
+
+<body>
+   <header>
+       <nav>
+           <h1 class="navLogo">Te-centralen</h1>
+           <ul class="navList">
+               <li class="navItem"><a href="#">Home</a></li>
+               <li class="navItem"><a href="#">Meny</a></li>
+               <li class="navItem"><a href="#sectionThree-card_reserveTableForm">Table Reserveation</a></li>
+               <li class="navItem"><a href="#">Contact us</a></li>
+           </ul>
+       </nav>
+   </header>
+<!--Section one homepage-->
+   <section class="sectionOne">
+    
+    <h2 class="sectionOne-heading">Welcome</h2>
+    <h3 class="sectionOne-subHeading">welcome</h3>
+       
+   </section>
+<!--Section Two homepage-->
+   <section class="sectionTwo">
+       <article class="sectionTwo-article">
+           <h3 class="sectionTwo-article_heading">Lorem.</h3>
+           <p class="sectionTwo-article_paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Numquam doloremque praesentium omnis. Quo quod unde, 
+                neque deleniti ab ratione ipsum architecto?
+           </p>
+           <p class="sectionTwo-article_paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Facere, ipsum eaque.
+           </p>
+       </article>
+       <div class="sectionTwo-imgContainer">
+            <img src="img/teaCup.png" alt="">
+       </div>
+   </section>
+<!--Section three homepage-->
+   <section class="sectionThree">
+        <div class="sectionThree-card_container">
+                <div class="sectionThree-card_aside">
+
+                      <!--from card-->
+                      <form id="sectionThree-card_reserveTableForm" action="">
+                        <label for="ReserveName"></label>
+                        <input type="text" name="reserveName" placeholder="Type your Full Name" id="ReserveName">
+
+                        <label for="ReserveEmail"></label>
+                        <input type="email" name="reserveEmail" placeholder="Type your Email" id="ReserveEmail">
+
+                        <!--Note:didn't need to style this div in css, 
+                            did what i wanted to do fromstart-->
+                        <div class="formRowDate&size">
+                            <label for="ReserveDate"></label>
+                            <input type="date" id="ReserveDate">
+
+                            <label for="GroupSize"></label>
+                            <select name="groupSize" id="GroupSize">
+                            </select>
+                        </div>
+
+                        <label for="MobileNumber"></label>
+                        <input type="text" id="MobileNumber" placeholder="+46">
+
+                        <label for="CustumerMessage"></label>
+                        <textarea name="custumerMessage-other" id="CustumerMessage" cols="30" rows="15">
+                        </textarea>
+
+                        <div class="formRow">
+                            <input type="checkbox" value="agrees" id="AgreeToGDPR">
+                            <label for="AgreeToGDPR">Agree to terms</label>
+
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+
+                 <!--aside infromation-->
+                    <article class="card-aside_article">
+                        <h3 class="card-aside_heading">open hours</h3>
+                            <p class="card-aside_paragraph">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        <h3 class="card-aside_heading">price</h3>
+                            <p class="card-aside_paragraph">
+                                Lorem ipsum dolor sit amet consectetur.
+                                
+                            </p>
+                        <h3 class="card-aside_heading">info</h3>
+                            <p class="card-aside_paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Illum sint consequatur aut expedita unde asperiores, 
+                                quam placeat reiciendis nulla vitae.
+                            </p>
+                    </article>
+
+                    <i class="card-aside_reserveHeading">
+                        Reserve a <br>
+                        table here
+                    </i>
+                </div>
+
+        <!--article under aside card cover-->
+            <article class="sectionThree-article">
+                <p class="sectionThree-article_paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Nobis quasi culpa, harum quibusdam cumque soluta vel
+                      quis ducimus officia aliquam odio?
+                </p>
+                <p class="sectionThree-article_paragraph">
+                    Lorem, ipsum dolor.
+                </p>
+                <p class="sectionThree-article_paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Commodi, tenetur expedita.
+                </p>
+            </article>
+        </div>
+   </section>
+   <footer>
+
+   </footer>
+</body>
+</html>
